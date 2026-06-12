@@ -1,0 +1,33 @@
+:root {
+  /* Warna Dasar */
+  --color-primary: #61dafb; /* Biru khas React */
+  --color-secondary: #20232a; /* Background gelap React */
+  --color-accent: #f7df1e; /* Kuning JavaScript */
+  --color-success: #4ade80;
+  --color-warning: #facc15;
+  --color-danger: #f87171;
+
+  /* Warna Light Theme (Default) */
+  --color-text: #1a1a2e;
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-border: #e2e8f0;
+
+  /* Shadow & Radius */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  --radius-sharp: 4px;
+  --radius-default: 8px;
+  --radius-card: 12px;
+  --radius-pill: 9999px;
+}
+
+/* Warna Dark Theme (Nanti akan diaktifkan via Context API) */
+.dark {
+  --color-text: #e2e8f0;
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+}
