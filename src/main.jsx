@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
+import { ThemeProvider } from './context/ThemeContext.jsx'
 
 // Import desain token & global styling
 import './styles/variables.css'
@@ -10,8 +11,10 @@ import './styles/typography.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <ThemeProvider>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </ThemeProvider>
     </React.StrictMode>,
 )

@@ -9,9 +9,9 @@ export default function Footer() {
       marginTop: 'auto'
     }}>
       <p>
-        © {currentYear} YOU SHOULD KNOW REACT. 
-        <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: 'var(--color-primary)', marginLeft: '0.5rem' }}>
-          GitHub
+        © {currentYear} YOU SHOULD KNOW REACT.
+        <a href="https://github.com/sulthonmufti/you-should-know-react" target="_blank" rel="noreferrer" style={{ color: 'var(--color-primary)', marginLeft: '0.5rem' }}>
+          sulthonmufti
         </a>
       </p>
     </footer>
