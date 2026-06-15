@@ -1,5 +1,8 @@
 import HeroSection from './HeroSection'
 import CurriculumPreview from './CurriculumPreview'
+import WhyThisProject from './WhyThisProject'
+import ScrollReveal from '../../components/ui/ScrollReveal'
+
 
 export default function Home() {
   return (
@@ -10,7 +13,15 @@ export default function Home() {
       paddingBottom: '4rem' 
     }}>
       {/* Hero Section */}
-      <HeroSection />
+      <ScrollReveal>
+        <HeroSection />
+      </ScrollReveal>
+      
+      {/* Why This Project Section */}
+      <ScrollReveal>
+        <WhyThisProject />
+      </ScrollReveal>
+
       {/* Curriculum Preview */}
       <CurriculumPreview />
     </div>
