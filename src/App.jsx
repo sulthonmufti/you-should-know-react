@@ -6,6 +6,7 @@ import PageWrapper from './components/layout/PageWrapper'
 
 import Home from './pages/Home'
 import Learn from './pages/Learn'
+import Topic from './pages/Topic'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/learn/:moduleId/:topicId" element={<Topic />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageWrapper>
