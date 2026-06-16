@@ -35,6 +35,16 @@ export const curriculum = [
         path: "/learn/module-0/modern-js",
         duration: "15 menit",
       },
+      {
+        id: "dom-event",
+        moduleId: "module-0",
+        title: "0.4 DOM & Event Handling",
+        description:
+          "Memahami DOM, Event Listener, dan pengenalan Synthetic Events di React.",
+        level: "Dasar",
+        path: "/learn/module-0/dom-event",
+        duration: "12 menit",
+      },
     ],
   },
   {
