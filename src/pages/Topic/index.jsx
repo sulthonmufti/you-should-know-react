@@ -7,12 +7,18 @@ import Sidebar from '../../components/layout/Sidebar';
 import Badge from '../../components/ui/Badge';
 
 import ProjectAnatomy from '../../content/module-0/ProjectAnatomy';
+import HtmlCss from '../../content/module-0/HtmlCss';
+import ModernJs from '../../content/module-0/ModernJs';
+import DomEvent from '../../content/module-0/DomEvent';
+
+import IntroReact from '../../content/module-1/IntroReact';
+import ComponentProps from '../../content/module-1/ComponentProps';
+import UseState from '../../content/module-1/UseState';
 
 export default function Topic() {
   const { moduleId, topicId } = useParams();
   const topic = getTopicById(moduleId, topicId);
   const { isCompleted, toggleTopic } = useProgress();
-  const completed = isCompleted(topicId);
   
   if (!topic) {
     return <Navigate to="/not-found" />;
@@ -20,8 +26,26 @@ export default function Topic() {
 
   const renderContent = () => {
     switch (topicId) {
+      //modul 0
       case 'project-anatomy':
         return <ProjectAnatomy />;
+      case 'html-css':
+        return <HtmlCss />;
+      case 'modern-js':
+        return <ModernJs />;
+      case 'dom-event': 
+        return <DomEvent />;
+
+      //modul 1
+      case 'intro-react':
+        return <IntroReact />;
+      case 'component-props':
+        return <ComponentProps />;
+      case 'use-state':
+        return <UseState />;
+      case 'usestate':
+        return <UseState />;
+
       default:
         return (
           <div style={{ padding: '3rem', textAlign: 'center', backgroundColor: 'var(--color-surface)', borderRadius: 'var(--radius-default)', border: '1px dashed var(--color-border)' }}>
@@ -31,6 +55,8 @@ export default function Topic() {
         );
     }
   };
+
+  const completed = isCompleted(topicId);
 
   return (
     <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
