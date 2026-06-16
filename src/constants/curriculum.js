@@ -82,6 +82,53 @@ export const curriculum = [
         path: "/learn/module-1/usestate",
         duration: "15 menit",
       },
+      {
+        id: "useeffect",
+        moduleId: "module-1",
+        title: "1.4 Efek Samping (useEffect)",
+        description:
+          "Mengelola siklus hidup komponen, fetch API, dan array dependensi.",
+        level: "Menengah",
+        path: "/learn/module-1/useeffect",
+        duration: "18 menit",
+      },
+      {
+        id: "list-keys",
+        moduleId: "module-1",
+        title: "1.5 List & Keys",
+        description:
+          "Merender daftar dari array dan memahami pentingnya prop key.",
+        level: "Dasar",
+        path: "/learn/module-1/list-keys",
+        duration: "10 menit",
+      },
+    ],
+  },
+  {
+    moduleId: "module-2",
+    moduleTitle: "REACT MENENGAH",
+    moduleDescription:
+      "Menghubungkan React dengan ekosistem luar dan state global.",
+    topics: [
+      {
+        id: "advanced-hooks",
+        moduleId: "module-2",
+        title: "2.1 Hooks Lanjutan (useRef)",
+        description: "Memanipulasi DOM secara langsung tanpa memicu re-render.",
+        level: "Menengah",
+        path: "/learn/module-2/advanced-hooks",
+        duration: "10 menit",
+      },
+      {
+        id: "fetch-api",
+        moduleId: "module-2",
+        title: "2.2 Fetch API",
+        description:
+          "Mengambil data dari REST API sungguhan beserta error handling.",
+        level: "Menengah",
+        path: "/learn/module-2/fetch-api",
+        duration: "15 menit",
+      },
     ],
   },
 ];
