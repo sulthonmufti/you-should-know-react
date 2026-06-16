@@ -15,6 +15,12 @@ import IntroReact from '../../content/module-1/IntroReact';
 import ComponentProps from '../../content/module-1/ComponentProps';
 import UseState from '../../content/module-1/UseState';
 
+import UseEffect from '../../content/module-1/UseEffect';
+import ListKeys from '../../content/module-1/ListKeys';
+
+import AdvancedHooks from '../../content/module-2/AdvancedHooks';
+import FetchApi from '../../content/module-2/FetchApi';
+
 export default function Topic() {
   const { moduleId, topicId } = useParams();
   const topic = getTopicById(moduleId, topicId);
@@ -41,10 +47,18 @@ export default function Topic() {
         return <IntroReact />;
       case 'component-props':
         return <ComponentProps />;
-      case 'use-state':
-        return <UseState />;
       case 'usestate':
         return <UseState />;
+      case 'useeffect':
+        return <UseEffect />;
+      case 'list-keys':
+        return <ListKeys />;
+
+      //modul 2
+      case 'advanced-hooks':
+        return <AdvancedHooks />;
+      case 'fetch-api':
+        return <FetchApi />;
 
       default:
         return (
