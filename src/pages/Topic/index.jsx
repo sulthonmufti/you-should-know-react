@@ -20,6 +20,8 @@ import ListKeys from '../../content/module-1/ListKeys';
 
 import AdvancedHooks from '../../content/module-2/AdvancedHooks';
 import FetchApi from '../../content/module-2/FetchApi';
+import FormHandling from '../../content/module-2/FormHandling';
+import ContextApi from '../../content/module-2/ContextApi';
 
 export default function Topic() {
   const { moduleId, topicId } = useParams();
@@ -59,6 +61,10 @@ export default function Topic() {
         return <AdvancedHooks />;
       case 'fetch-api':
         return <FetchApi />;
+      case 'form-handling':
+        return <FormHandling />;
+      case 'context-api':
+        return <ContextApi />;
 
       default:
         return (

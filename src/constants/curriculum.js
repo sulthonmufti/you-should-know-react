@@ -129,6 +129,26 @@ export const curriculum = [
         path: "/learn/module-2/fetch-api",
         duration: "15 menit",
       },
+      {
+        id: "form-handling",
+        moduleId: "module-2",
+        title: "2.3 Form Handling",
+        description:
+          "Mengelola input pengguna dengan teknik Controlled Components.",
+        level: "Menengah",
+        path: "/learn/module-2/form-handling",
+        duration: "12 menit",
+      },
+      {
+        id: "context-api",
+        moduleId: "module-2",
+        title: "2.4 Context API",
+        description:
+          "Mengatasi Prop Drilling dengan manajemen state skala global.",
+        level: "Menengah",
+        path: "/learn/module-2/context-api",
+        duration: "15 menit",
+      },
     ],
   },
 ];
