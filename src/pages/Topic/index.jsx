@@ -22,6 +22,7 @@ import AdvancedHooks from '../../content/module-2/AdvancedHooks';
 import FetchApi from '../../content/module-2/FetchApi';
 import FormHandling from '../../content/module-2/FormHandling';
 import ContextApi from '../../content/module-2/ContextApi';
+import ReactRouter from '../../content/module-2/ReactRouter';
 
 export default function Topic() {
   const { moduleId, topicId } = useParams();
@@ -65,6 +66,8 @@ export default function Topic() {
         return <FormHandling />;
       case 'context-api':
         return <ContextApi />;
+      case 'react-router':
+        return <ReactRouter />;
 
       default:
         return (

@@ -149,6 +149,16 @@ export const curriculum = [
         path: "/learn/module-2/context-api",
         duration: "15 menit",
       },
+      {
+        id: "react-router",
+        moduleId: "module-2",
+        title: "2.5 React Router",
+        description:
+          "Membangun navigasi SPA (Single Page Application) dan rute dinamis.",
+        level: "Menengah",
+        path: "/learn/module-2/react-router",
+        duration: "12 menit",
+      },
     ],
   },
 ];
