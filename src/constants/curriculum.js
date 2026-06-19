@@ -161,4 +161,32 @@ export const curriculum = [
       },
     ],
   },
+  {
+    moduleId: "module-3",
+    moduleTitle: "BACKEND & DEPLOYMENT",
+    moduleDescription:
+      "Menghubungkan React dengan database cloud, optimasi performa, dan rilis ke publik.",
+    topics: [
+      {
+        id: "firebase-auth",
+        moduleId: "module-3",
+        title: "3.1 Firebase Auth",
+        description:
+          "Integrasi sistem otentikasi login Google dan manajemen sesi.",
+        level: "Lanjut",
+        path: "/learn/module-3/firebase-auth",
+        duration: "20 menit",
+      },
+      {
+        id: "firestore",
+        moduleId: "module-3",
+        title: "3.2 Cloud Firestore",
+        description:
+          "Operasi CRUD pada database NoSQL dan sinkronisasi Real-Time.",
+        level: "Lanjut",
+        path: "/learn/module-3/firestore",
+        duration: "25 menit",
+      },
+    ],
+  },
 ];

@@ -24,6 +24,9 @@ import FormHandling from '../../content/module-2/FormHandling';
 import ContextApi from '../../content/module-2/ContextApi';
 import ReactRouter from '../../content/module-2/ReactRouter';
 
+import FirebaseAuth from '../../content/module-3/FirebaseAuth';
+import Firestore from '../../content/module-3/Firestore';
+
 export default function Topic() {
   const { moduleId, topicId } = useParams();
   const topic = getTopicById(moduleId, topicId);
@@ -68,6 +71,10 @@ export default function Topic() {
         return <ContextApi />;
       case 'react-router':
         return <ReactRouter />;
+
+      //modul 3
+      case 'firebase-auth': return <FirebaseAuth />;
+      case 'firestore': return <Firestore />;
 
       default:
         return (
