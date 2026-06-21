@@ -26,6 +26,9 @@ import ReactRouter from '../../content/module-2/ReactRouter';
 
 import FirebaseAuth from '../../content/module-3/FirebaseAuth';
 import Firestore from '../../content/module-3/Firestore';
+import Performance from '../../content/module-3/Performance';
+import Testing from '../../content/module-3/Testing';
+import Deploy from '../../content/module-3/Deploy';
 
 export default function Topic() {
   const { moduleId, topicId } = useParams();
@@ -73,8 +76,16 @@ export default function Topic() {
         return <ReactRouter />;
 
       //modul 3
-      case 'firebase-auth': return <FirebaseAuth />;
-      case 'firestore': return <Firestore />;
+      case 'firebase-auth':
+        return <FirebaseAuth />;
+      case 'firestore':
+        return <Firestore />;
+      case 'performance':
+        return <Performance />;
+      case 'testing':
+        return <Testing />;
+      case 'deploy':
+        return <Deploy />;
 
       default:
         return (

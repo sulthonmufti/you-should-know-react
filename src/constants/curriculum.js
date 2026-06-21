@@ -187,6 +187,36 @@ export const curriculum = [
         path: "/learn/module-3/firestore",
         duration: "25 menit",
       },
+      {
+        id: "performance",
+        moduleId: "module-3",
+        title: "3.3 Performance",
+        description:
+          "Optimasi re-render dengan React.memo, useMemo, dan lazy loading.",
+        level: "Lanjut",
+        path: "/learn/module-3/performance",
+        duration: "18 menit",
+      },
+      {
+        id: "testing",
+        moduleId: "module-3",
+        title: "3.4 Testing",
+        description:
+          "Menulis unit testing dengan Jest/Vitest dan React Testing Library.",
+        level: "Lanjut",
+        path: "/learn/module-3/testing",
+        duration: "20 menit",
+      },
+      {
+        id: "deploy",
+        moduleId: "module-3",
+        title: "3.5 Deploy",
+        description:
+          "Proses Build CI/CD dan rilis aplikasi ke publik via Vercel/Netlify.",
+        level: "Lanjut",
+        path: "/learn/module-3/deploy",
+        duration: "10 menit",
+      },
     ],
   },
 ];
