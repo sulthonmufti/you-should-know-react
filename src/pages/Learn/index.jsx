@@ -1,7 +1,19 @@
 import { curriculum } from '../../constants/curriculum';
 import ModuleCard from './ModuleCard';
+import SearchBar from '../../components/ui/SearchBar';
+import { useState } from 'react';
 
 export default function Learn() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filterLevel, setFilterLevel] = useState('Semua');
+
+  const filteredCurriculum = curriculum.filter(module => {
+    const matchesSearch = module.moduleTitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      module.topics.some(topic => topic.title.toLowerCase().includes(searchQuery.toLowerCase()));y
+    const matchesLevel = filterLevel === 'Semua' || module.level === filterLevel;
+    return matchesSearch && matchesLevel;
+  });
+
   return (
     <div style={{ padding: '2rem 1rem', maxWidth: '800px', margin: '0 auto', width: '100%' }}>
       {/* Header Halaman */}
