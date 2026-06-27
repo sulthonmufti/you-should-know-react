@@ -7,11 +7,12 @@ import ProgressBar from '../../components/ui/ProgressBar';
 import { useProgress } from '../../hooks/useProgress';
 import { CheckCircle2 } from 'lucide-react';
 
-export default function ModuleCard({ module }) {
+export default function ModuleCard({ module, forceExpand = false }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { getModuleProgress, isCompleted } = useProgress();
 
   const progressData = getModuleProgress(module.moduleId);
+  const shouldExpand = isExpanded || forceExpand;
 
   return (
     <Card>
@@ -29,7 +30,7 @@ export default function ModuleCard({ module }) {
           <button style={{ 
             background: 'none', border: 'none', color: 'var(--color-text)', cursor: 'pointer', padding: '0.5rem' 
           }}>
-            {isExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+            {shouldExpand ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
           </button>
         </div>
 
@@ -44,7 +45,7 @@ export default function ModuleCard({ module }) {
       </div>
 
       {/* Daftar Materi */}
-      {isExpanded && (
+      {shouldExpand && (
         <div style={{ 
           marginTop: '1rem', 
           paddingTop: '1rem', 
