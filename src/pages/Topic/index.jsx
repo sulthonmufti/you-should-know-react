@@ -30,6 +30,9 @@ import Performance from '../../content/module-3/Performance';
 import Testing from '../../content/module-3/Testing';
 import Deploy from '../../content/module-3/Deploy';
 
+import SetupFirebase from '../../content/module-4/SetupFirebase';
+import PageNotFound from '../../content/module-4/PageNotFound';
+
 export default function Topic() {
   const { moduleId, topicId } = useParams();
   const topic = getTopicById(moduleId, topicId);
@@ -86,6 +89,12 @@ export default function Topic() {
         return <Testing />;
       case 'deploy':
         return <Deploy />;
+
+      //modul 4
+      case 'setup-firebase': 
+        return <SetupFirebase />;
+      case 'page-not-found': 
+        return <PageNotFound />;
 
       default:
         return (

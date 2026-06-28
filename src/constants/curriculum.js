@@ -219,4 +219,41 @@ export const curriculum = [
       },
     ],
   },
+  {
+    moduleId: "module-4",
+    moduleTitle: "DI BALIK LAYAR (EKOSISTEM)",
+    moduleDescription:
+      "Pembelajaran berkelanjutan: Membedah bagaimana halaman tambahan dan sistem backend website ini dibuat.",
+    topics: [
+      {
+        id: "setup-firebase",
+        moduleId: "module-4",
+        title: "4.1 Setup Firebase & .env",
+        description:
+          "Cara aman menyimpan API Key dan menginisialisasi layanan Google Firebase.",
+        level: "Lanjut",
+        path: "/learn/module-4/setup-firebase",
+        duration: "10 menit",
+      },
+      {
+        id: "page-project-structure",
+        moduleId: "module-4",
+        title: "4.2 Halaman Project Structure",
+        description: "Membangun visualisasi komponen interaktif tree folder.",
+        level: "Menengah",
+        path: "/learn/module-4/page-project-structure",
+        duration: "15 menit",
+      },
+      {
+        id: "page-not-found",
+        moduleId: "module-4",
+        title: "4.3 Halaman 404 & UX Polishing",
+        description:
+          "Routing wildcard (*) untuk menangkap URL ngawur dan teknik desain UX akhir.",
+        level: "Dasar",
+        path: "/learn/module-4/page-not-found",
+        duration: "10 menit",
+      },
+    ],
+  },
 ];
