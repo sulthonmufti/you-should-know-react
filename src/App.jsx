@@ -9,6 +9,8 @@ import Learn from './pages/Learn'
 import Topic from './pages/Topic'
 import NotFound from './pages/NotFound'
 
+import ProjectStructure from './pages/ProjectStructure';
+
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/learn/:moduleId/:topicId" element={<Topic />} />
+          <Route path="/project-structure" element={<ProjectStructure />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageWrapper>
