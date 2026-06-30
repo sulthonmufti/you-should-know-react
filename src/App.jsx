@@ -10,6 +10,7 @@ import Topic from './pages/Topic'
 import NotFound from './pages/NotFound'
 
 import ProjectStructure from './pages/ProjectStructure';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/learn" element={<Learn />} />
           <Route path="/learn/:moduleId/:topicId" element={<Topic />} />
           <Route path="/project-structure" element={<ProjectStructure />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageWrapper>
