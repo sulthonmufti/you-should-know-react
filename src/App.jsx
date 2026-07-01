@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound'
 
 import ProjectStructure from './pages/ProjectStructure';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/learn/:moduleId/:topicId" element={<Topic />} />
           <Route path="/project-structure" element={<ProjectStructure />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageWrapper>
